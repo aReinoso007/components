@@ -1,10 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const App = () => {
-  return <div>Hi there buddy</div>
+  return (
+    <div className='ui container comments'>
+      <div className='comment'>
+        <a href='/' className='avatar'>
+          <img alt='avatar' />
+        </a>
+        <div className='content'>
+          <a href='/' className='author'>
+            Alex
+          </a>
+          <div className='metadata'>
+            <span className='date'>Today at 6 PM</span>
+          </div>
+          <div className='text'>Nicely done my dude</div>
+        </div>
+      </div>
+
+    </div>
+  );
 }
 
 root.render(<App />)
