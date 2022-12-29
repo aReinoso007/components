@@ -6,8 +6,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 const App = () => {
   return (
     <div className='ui container comments'>
-      <CommentDetail />
-
+      <CommentDetail author="Alex" />
+      <CommentDetail author="Pablo" />
+      <CommentDetail author="Akio" />
     </div>
   );
 }
