@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { faker } from "@faker-js/faker";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const App = () => {
@@ -7,16 +8,16 @@ const App = () => {
     <div className='ui container comments'>
       <div className='comment'>
         <a href='/' className='avatar'>
-          <img alt='avatar' />
+          <img alt='avatar' src={faker.image.image()} />
         </a>
         <div className='content'>
           <a href='/' className='author'>
             Alex
           </a>
           <div className='metadata'>
-            <span className='date'>Today at 6 PM</span>
+            <span className='date'>Today at 6:45 PM</span>
           </div>
-          <div className='text'>Nicely done my dude</div>
+          <div className='text'>Nicely done my dude. You is a hacker.</div>
         </div>
       </div>
 
