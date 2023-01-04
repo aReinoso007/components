@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import CommentDetail from './CommentDetail';
 import { faker } from "@faker-js/faker";
 import ApprovalCard from './ApprovalCard';
+import './style/App.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const App = () => {
